@@ -12,17 +12,14 @@ func twoSum(nums []int, target int) []int {
 	return nil
 }
 
-// Two-pass Hash Table
-func twoSumHashTable(nums []int, target int) []int {
+// One-pass Hash Table
+func twoSumOnePass(nums []int, target int) []int {
 	var numsHashTable = make(map[int]int)
 	for i, v := range nums {
-		numsHashTable[v] = i
-	}
-	for v, i := range numsHashTable {
-		need := target - v
-		if k2, ok := numsHashTable[need]; ok {
-			return []int{ i, k2 }
+		if j, ok := numsHashTable[target - v]; ok {
+			return []int{ j, i }
 		}
+		numsHashTable[v] = i
 	}
 	return nil
 }

@@ -27,6 +27,7 @@ func TestTwoSum(t *testing.T) {
 		{[]int{2, 7, 11, 5}, 7, []int{0, 3} },
 		{[]int{2, 7, 11, 5}, 16, []int{2, 3} },
 		{[]int{2, 7, 11, 5}, 18, []int{1, 2} },
+		{[]int{3, 2, 4}, 6, []int{1, 2} },
 	}{
 		if actually := twoSum(unit.m, unit.n); !groupEqual(actually, unit.expected){
 			t.Errorf("twoSum: [%v], actually: [%v]", unit, actually)
@@ -34,7 +35,7 @@ func TestTwoSum(t *testing.T) {
 	}
 }
 
-func TestTwoSumHashTable(t *testing.T) {
+func TestTwoSumOnePass(t *testing.T) {
 	for _, unit := range []struct {
 		m        []int
 		n          int
@@ -42,10 +43,10 @@ func TestTwoSumHashTable(t *testing.T) {
 	}{
 		{[]int{2, 7, 11, 5}, 9, []int{0, 1} },
 		{[]int{2, 7, 11, 5}, 7, []int{0, 3} },
-		{[]int{2, 7, 11, 5}, 16, []int{2, 3} },
-		{[]int{2, 7, 11, 5}, 18, []int{1, 2} },
+		{[]int{3, 2, 4}, 6, []int{1, 2} },
+		{[]int{3, 3}, 6, []int{0, 1} },
 	}{
-		if actually := twoSumHashTable(unit.m, unit.n); !groupEqual(actually, unit.expected){
+		if actually := twoSumOnePass(unit.m, unit.n); !groupEqual(actually, unit.expected){
 			t.Errorf("twoSum: [%v], actually: [%v]", unit, actually)
 		}
 	}

@@ -49,13 +49,13 @@ func TestAddTwoNumber(t *testing.T) {
 		},
 	}{
 		if actually := addTwoNumbers(unit.m, unit.n); !addTowNumberEqual(actually, unit.expected){
-			t.Errorf("twoSum: [%v], actually: [%v]", unit, actually)
+			t.Errorf("addTwoNumbers: [%v], actually: [%v]", unit, actually)
 		}
 		if actually := addTwoNumbers2(unit.m, unit.n); !addTowNumberEqual(actually, unit.expected){
-			t.Errorf("twoSum: [%v], actually: [%v]", unit, actually)
+			t.Errorf("addTwoNumbers: [%v], actually: [%v]", unit, actually)
 		}
 		if actually := addTwoNumbers3(unit.m, unit.n); !addTowNumberEqual(actually, unit.expected){
-			t.Errorf("twoSum: [%v], actually: [%v]", unit, actually)
+			t.Errorf("addTwoNumbers: [%v], actually: [%v]", unit, actually)
 		}
 	}
 }

@@ -1,4 +1,4 @@
-package leetcode_golang
+package easy
 
 import (
 	"testing"

@@ -1,4 +1,4 @@
-package leetcode_golang
+package medium
 
 // 4 ms	2.9 MB
 func lengthOfLongestSubstring(s string) int {
@@ -24,6 +24,7 @@ func lengthOfLongestSubstring(s string) int {
 }
 
 // garcez
+// 4ms 2.5MB
 func lengthOfLongestSubstring2(s string) int {
 	var longest, curStart int
 	for i, c := range s {

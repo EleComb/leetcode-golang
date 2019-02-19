@@ -1,4 +1,4 @@
-package leetcode_golang
+package easy
 
 // Brute Force
 func twoSum(nums []int, target int) []int {

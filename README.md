@@ -8,6 +8,8 @@
 
 4. [Median of Two Sorted Arrays](https://github.com/EleComb/leetcode-golang/hard/find_median_sorted_arrays)
 
+5. [Longest Palindromic Substring](https://github.com/EleComb/leetcode-golang/medium/longest_palindrome)
+
 
 
 

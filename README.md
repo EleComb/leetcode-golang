@@ -10,6 +10,8 @@
 
 5. [Longest Palindromic Substring](https://github.com/EleComb/leetcode-golang/medium/longest_palindrome)
 
+6. [ZigZag Conversion](https://github.com/EleComb/leetcode-golang/medium/zig_zag_convert)
+
 
 
 
